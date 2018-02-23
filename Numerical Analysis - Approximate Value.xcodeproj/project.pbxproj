@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC62071B9888F5E8A00AD7C /* Pods_Numerical_Analysis___Approximate_Value.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ED31AD1D2FFCBB205C270D /* Pods_Numerical_Analysis___Approximate_Value.framework */; };
 		D4CA0C9B204084D50060B7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */; };
 		D4CA0C9D204084D50060B7B4 /* Main_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9C204084D50060B7B4 /* Main_VC.swift */; };
 		D4CA0CA0204084D50060B7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0C9E204084D50060B7B4 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EAD5B680A1242B9427FE833 /* Pods-Numerical Analysis - Approximate Value.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Numerical Analysis - Approximate Value.release.xcconfig"; path = "Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value.release.xcconfig"; sourceTree = "<group>"; };
+		482B67640B77453DE64BB5A4 /* Pods-Numerical Analysis - Approximate Value.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Numerical Analysis - Approximate Value.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value.debug.xcconfig"; sourceTree = "<group>"; };
 		D4CA0C97204084D50060B7B4 /* Numerical Analysis - Approximate Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Numerical Analysis - Approximate Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CA0C9C204084D50060B7B4 /* Main_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_VC.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D4CA0CA4204084D50060B7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4CA0CA6204084D50060B7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CA0CB020408D230060B7B4 /* Mathematical Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mathematical Functions.swift"; sourceTree = "<group>"; };
+		F3ED31AD1D2FFCBB205C270D /* Pods_Numerical_Analysis___Approximate_Value.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Numerical_Analysis___Approximate_Value.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC62071B9888F5E8A00AD7C /* Pods_Numerical_Analysis___Approximate_Value.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		173F1CC4D735027C8B4043CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED31AD1D2FFCBB205C270D /* Pods_Numerical_Analysis___Approximate_Value.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		205787B6EE3274A16E0E72EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				482B67640B77453DE64BB5A4 /* Pods-Numerical Analysis - Approximate Value.debug.xcconfig */,
+				3EAD5B680A1242B9427FE833 /* Pods-Numerical Analysis - Approximate Value.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4CA0C8E204084D50060B7B4 = {
 			isa = PBXGroup;
 			children = (
 				D4CA0C99204084D50060B7B4 /* Numerical Analysis - Approximate Value */,
 				D4CA0C98204084D50060B7B4 /* Products */,
+				205787B6EE3274A16E0E72EC /* Pods */,
+				173F1CC4D735027C8B4043CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CA0CA9204084D50060B7B4 /* Build configuration list for PBXNativeTarget "Numerical Analysis - Approximate Value" */;
 			buildPhases = (
+				8B7AB62608AA21A6B103BE90 /* [CP] Check Pods Manifest.lock */,
 				D4CA0C93204084D50060B7B4 /* Sources */,
 				D4CA0C94204084D50060B7B4 /* Frameworks */,
 				D4CA0C95204084D50060B7B4 /* Resources */,
+				8CBDAC0A14B27E92810F56C7 /* [CP] Embed Pods Frameworks */,
+				31A2E51624EBAA3544C751AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31A2E51624EBAA3544C751AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7AB62608AA21A6B103BE90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Numerical Analysis - Approximate Value-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBDAC0A14B27E92810F56C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4CA0C93204084D50060B7B4 /* Sources */ = {
@@ -308,6 +389,7 @@
 		};
 		D4CA0CAA204084D50060B7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482B67640B77453DE64BB5A4 /* Pods-Numerical Analysis - Approximate Value.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +406,7 @@
 		};
 		D4CA0CAB204084D50060B7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EAD5B680A1242B9427FE833 /* Pods-Numerical Analysis - Approximate Value.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
