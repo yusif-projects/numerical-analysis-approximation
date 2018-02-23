@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D4CA0C9B204084D50060B7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */; };
-		D4CA0C9D204084D50060B7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9C204084D50060B7B4 /* ViewController.swift */; };
+		D4CA0C9D204084D50060B7B4 /* Main_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9C204084D50060B7B4 /* Main_VC.swift */; };
 		D4CA0CA0204084D50060B7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0C9E204084D50060B7B4 /* Main.storyboard */; };
 		D4CA0CA2204084D50060B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0CA1204084D50060B7B4 /* Assets.xcassets */; };
 		D4CA0CA5204084D50060B7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0CA3204084D50060B7B4 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		D4CA0C97204084D50060B7B4 /* Numerical Analysis - Approximate Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Numerical Analysis - Approximate Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4CA0C9C204084D50060B7B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4CA0C9C204084D50060B7B4 /* Main_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_VC.swift; sourceTree = "<group>"; };
 		D4CA0C9F204084D50060B7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4CA0CA1204084D50060B7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4CA0CA4204084D50060B7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		D4CA0C99204084D50060B7B4 /* Numerical Analysis - Approximate Value */ = {
 			isa = PBXGroup;
 			children = (
+				D4CA0CAC2040868D0060B7B4 /* Model */,
+				D4CA0CAD204086950060B7B4 /* View */,
+				D4CA0CAE204086A10060B7B4 /* Controller */,
+				D4CA0CAF204086AC0060B7B4 /* Resources */,
 				D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */,
-				D4CA0C9C204084D50060B7B4 /* ViewController.swift */,
 				D4CA0C9E204084D50060B7B4 /* Main.storyboard */,
-				D4CA0CA1204084D50060B7B4 /* Assets.xcassets */,
 				D4CA0CA3204084D50060B7B4 /* LaunchScreen.storyboard */,
+				D4CA0CA1204084D50060B7B4 /* Assets.xcassets */,
 				D4CA0CA6204084D50060B7B4 /* Info.plist */,
 			);
 			path = "Numerical Analysis - Approximate Value";
+			sourceTree = "<group>";
+		};
+		D4CA0CAC2040868D0060B7B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4CA0CAD204086950060B7B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4CA0CAE204086A10060B7B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA0C9C204084D50060B7B4 /* Main_VC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4CA0CAF204086AC0060B7B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CA0C9D204084D50060B7B4 /* ViewController.swift in Sources */,
+				D4CA0C9D204084D50060B7B4 /* Main_VC.swift in Sources */,
 				D4CA0C9B204084D50060B7B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,11 +309,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NM5JA8Q5L;
 				INFOPLIST_FILE = "Numerical Analysis - Approximate Value/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Numerical-Analysis---Approximate-Value";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +325,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NM5JA8Q5L;
 				INFOPLIST_FILE = "Numerical Analysis - Approximate Value/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusif-the-ios-developer.Numerical-Analysis---Approximate-Value";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
