@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Edit-->
         <scene sceneID="Iba-aF-fyy">
@@ -28,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WTO-iz-yha">
-                                <rect key="frame" x="20" y="233" width="335" height="200"/>
+                                <rect key="frame" x="20" y="221.5" width="335" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-O0-pMi">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2rp-nx-xt0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,7 +40,7 @@
                                             <constraint firstAttribute="height" constant="50" id="P1E-m7-BRK"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
@@ -56,7 +51,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MKd-6i-GTs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -66,7 +61,7 @@
                                             <constraint firstAttribute="height" constant="50" id="uIy-e2-1vl"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
@@ -74,12 +69,32 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6nr-Ts-sRP">
+                                <rect key="frame" x="20" y="179.5" width="335" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4k-Km-exG">
+                                <rect key="frame" x="20" y="451.5" width="335" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate_pressed:" destination="IjB-HB-VgD" eventType="touchUpInside" id="qXR-KC-tlq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WTO-iz-yha" firstAttribute="centerY" secondItem="GTk-ki-IRe" secondAttribute="centerY" id="CwA-TS-4mA"/>
+                            <constraint firstItem="WTO-iz-yha" firstAttribute="centerY" secondItem="GTk-ki-IRe" secondAttribute="centerY" constant="-12" id="CwA-TS-4mA"/>
+                            <constraint firstItem="t4k-Km-exG" firstAttribute="top" secondItem="WTO-iz-yha" secondAttribute="bottom" constant="30" id="Oxh-zA-Z9T"/>
+                            <constraint firstItem="6nr-Ts-sRP" firstAttribute="width" secondItem="WTO-iz-yha" secondAttribute="width" id="UAM-ua-r4d"/>
+                            <constraint firstItem="6nr-Ts-sRP" firstAttribute="centerX" secondItem="GTk-ki-IRe" secondAttribute="centerX" id="cKe-Ql-QnW"/>
+                            <constraint firstItem="t4k-Km-exG" firstAttribute="width" secondItem="6nr-Ts-sRP" secondAttribute="width" id="d5x-Pn-jhl"/>
+                            <constraint firstItem="WTO-iz-yha" firstAttribute="top" secondItem="6nr-Ts-sRP" secondAttribute="bottom" id="fFU-zC-Hzv"/>
                             <constraint firstItem="WTO-iz-yha" firstAttribute="leading" secondItem="PcB-Cp-3MO" secondAttribute="leading" constant="20" id="gnV-AC-dH9"/>
                             <constraint firstItem="PcB-Cp-3MO" firstAttribute="trailing" secondItem="WTO-iz-yha" secondAttribute="trailing" constant="20" id="hyP-36-vIe"/>
+                            <constraint firstItem="t4k-Km-exG" firstAttribute="centerX" secondItem="GTk-ki-IRe" secondAttribute="centerX" id="s2d-dw-vGD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PcB-Cp-3MO"/>
                     </view>
@@ -91,6 +106,7 @@
                     <connections>
                         <outlet property="accuracy_text_box" destination="Hl1-B3-sNg" id="hNg-Pt-zlG"/>
                         <outlet property="power_text_box" destination="YGB-XT-SCz" id="rEk-Y6-chf"/>
+                        <outlet property="result_label" destination="6nr-Ts-sRP" id="HCe-cg-CfK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B4-uA-4uZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
