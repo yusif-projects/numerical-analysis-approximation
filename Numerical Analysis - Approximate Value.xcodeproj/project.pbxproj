@@ -12,6 +12,7 @@
 		D4CA0CA0204084D50060B7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0C9E204084D50060B7B4 /* Main.storyboard */; };
 		D4CA0CA2204084D50060B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0CA1204084D50060B7B4 /* Assets.xcassets */; };
 		D4CA0CA5204084D50060B7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0CA3204084D50060B7B4 /* LaunchScreen.storyboard */; };
+		D4CA0CB120408D230060B7B4 /* Mathematical Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0CB020408D230060B7B4 /* Mathematical Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D4CA0CA1204084D50060B7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4CA0CA4204084D50060B7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4CA0CA6204084D50060B7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CA0CB020408D230060B7B4 /* Mathematical Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mathematical Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		D4CA0CAC2040868D0060B7B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4CA0CB020408D230060B7B4 /* Mathematical Functions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				D4CA0C9D204084D50060B7B4 /* Main_VC.swift in Sources */,
 				D4CA0C9B204084D50060B7B4 /* AppDelegate.swift in Sources */,
+				D4CA0CB120408D230060B7B4 /* Mathematical Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
