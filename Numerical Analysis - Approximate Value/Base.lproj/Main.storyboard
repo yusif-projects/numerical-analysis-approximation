@@ -27,85 +27,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-Yg-H3p">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WTO-iz-yha">
+                                <rect key="frame" x="20" y="233" width="335" height="200"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLu-2I-n16">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WTO-iz-yha">
-                                                <rect key="frame" x="20" y="213.5" width="335" height="200"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-O0-pMi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="2rp-nx-xt0"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Value" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-XT-SCz">
-                                                        <rect key="frame" x="0.0" y="50" width="335" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="P1E-m7-BRK"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wud-0r-hnI">
-                                                        <rect key="frame" x="0.0" y="100" width="335" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="MKd-6i-GTs"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Value" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-B3-sNg">
-                                                        <rect key="frame" x="0.0" y="150" width="335" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="uIy-e2-1vl"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-O0-pMi">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <constraints>
-                                            <constraint firstItem="WTO-iz-yha" firstAttribute="centerY" secondItem="QLu-2I-n16" secondAttribute="centerY" constant="-20" id="Q0v-Ho-ocq"/>
-                                            <constraint firstAttribute="trailing" secondItem="WTO-iz-yha" secondAttribute="trailing" constant="20" id="dNY-ej-bJV"/>
-                                            <constraint firstItem="WTO-iz-yha" firstAttribute="leading" secondItem="QLu-2I-n16" secondAttribute="leading" constant="20" id="vQF-b8-gdh"/>
+                                            <constraint firstAttribute="height" constant="50" id="2rp-nx-xt0"/>
                                         </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Value" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YGB-XT-SCz">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="P1E-m7-BRK"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wud-0r-hnI">
+                                        <rect key="frame" x="0.0" y="100" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MKd-6i-GTs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Value" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hl1-B3-sNg">
+                                        <rect key="frame" x="0.0" y="150" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uIy-e2-1vl"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="QLu-2I-n16" secondAttribute="bottom" id="4WX-Js-Hx4"/>
-                                    <constraint firstItem="QLu-2I-n16" firstAttribute="top" secondItem="dKy-Yg-H3p" secondAttribute="top" id="86s-vZ-mRE"/>
-                                    <constraint firstItem="QLu-2I-n16" firstAttribute="leading" secondItem="dKy-Yg-H3p" secondAttribute="leading" id="Nnx-XH-bE9"/>
-                                    <constraint firstAttribute="trailing" secondItem="QLu-2I-n16" secondAttribute="trailing" id="zp5-i2-pA2"/>
-                                </constraints>
-                            </scrollView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dKy-Yg-H3p" firstAttribute="leading" secondItem="GTk-ki-IRe" secondAttribute="leading" id="96p-ij-9ph"/>
-                            <constraint firstAttribute="trailing" secondItem="dKy-Yg-H3p" secondAttribute="trailing" id="B9Q-7c-bYb"/>
-                            <constraint firstItem="dKy-Yg-H3p" firstAttribute="top" secondItem="eUU-eL-87R" secondAttribute="bottom" id="GYT-b6-S4k"/>
-                            <constraint firstItem="QLu-2I-n16" firstAttribute="height" secondItem="GTk-ki-IRe" secondAttribute="height" id="gWI-NC-GXd"/>
-                            <constraint firstItem="Hpt-mh-a4N" firstAttribute="top" secondItem="dKy-Yg-H3p" secondAttribute="bottom" id="gpk-j5-kKm"/>
-                            <constraint firstItem="QLu-2I-n16" firstAttribute="width" secondItem="GTk-ki-IRe" secondAttribute="width" id="nCZ-9R-diU"/>
+                            <constraint firstItem="WTO-iz-yha" firstAttribute="centerY" secondItem="GTk-ki-IRe" secondAttribute="centerY" id="CwA-TS-4mA"/>
+                            <constraint firstItem="WTO-iz-yha" firstAttribute="leading" secondItem="PcB-Cp-3MO" secondAttribute="leading" constant="20" id="gnV-AC-dH9"/>
+                            <constraint firstItem="PcB-Cp-3MO" firstAttribute="trailing" secondItem="WTO-iz-yha" secondAttribute="trailing" constant="20" id="hyP-36-vIe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PcB-Cp-3MO"/>
                     </view>
