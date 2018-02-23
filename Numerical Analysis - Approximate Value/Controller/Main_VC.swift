@@ -4,18 +4,12 @@
 import UIKit
 
 class Main_VC: UIViewController {
-    @IBOutlet weak var power_slider: UISlider!
-    @IBOutlet weak var accuracy_slider: UISlider!
     @IBOutlet weak var result_label: UILabel!
+    
+    var power: Double = 0.0
+    var accuracy: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func power_slider_changed_value(_ sender: Any) {
-    }
-    
-    @IBAction func accuracy_slider_changed_value(_ sender: Any) {
-    }
-    
 }
