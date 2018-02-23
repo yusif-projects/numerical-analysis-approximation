@@ -70,14 +70,20 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6nr-Ts-sRP">
-                                <rect key="frame" x="20" y="179.5" width="335" height="42"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="181.5" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MYy-7c-f20"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4k-Km-exG">
-                                <rect key="frame" x="20" y="451.5" width="335" height="54"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <rect key="frame" x="20" y="441.5" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NZQ-jH-xfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="calculate_pressed:" destination="IjB-HB-VgD" eventType="touchUpInside" id="qXR-KC-tlq"/>
@@ -87,7 +93,7 @@
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WTO-iz-yha" firstAttribute="centerY" secondItem="GTk-ki-IRe" secondAttribute="centerY" constant="-12" id="CwA-TS-4mA"/>
-                            <constraint firstItem="t4k-Km-exG" firstAttribute="top" secondItem="WTO-iz-yha" secondAttribute="bottom" constant="30" id="Oxh-zA-Z9T"/>
+                            <constraint firstItem="t4k-Km-exG" firstAttribute="top" secondItem="WTO-iz-yha" secondAttribute="bottom" constant="20" id="Oxh-zA-Z9T"/>
                             <constraint firstItem="6nr-Ts-sRP" firstAttribute="width" secondItem="WTO-iz-yha" secondAttribute="width" id="UAM-ua-r4d"/>
                             <constraint firstItem="6nr-Ts-sRP" firstAttribute="centerX" secondItem="GTk-ki-IRe" secondAttribute="centerX" id="cKe-Ql-QnW"/>
                             <constraint firstItem="t4k-Km-exG" firstAttribute="width" secondItem="6nr-Ts-sRP" secondAttribute="width" id="d5x-Pn-jhl"/>

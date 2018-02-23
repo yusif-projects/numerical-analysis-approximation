@@ -14,6 +14,8 @@ class Main_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        result_label.isHidden = true
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Main_VC.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
@@ -34,6 +36,8 @@ class Main_VC: UIViewController {
         let result = approximateValue(power: power, accuracy: accuracy)
         
         result_label.text = "\(result)"
+        
+        result_label.isHidden = false
     }
     
 }
