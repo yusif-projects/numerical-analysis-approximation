@@ -15,7 +15,7 @@ func approximateValue(power: Double, accuracy: Double) -> Double {
     array_of_u.append(u)
     
     while u>epsilon {
-        u = (x/factorial(n: Double(i)))*u
+        u = (x/Double(i))*u
         array_of_u.append(u)
         i = i + 1
     }
