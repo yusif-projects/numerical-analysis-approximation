@@ -1,6 +1,12 @@
 # Numerical Analysis – Approximating Values
 ##### This is an iOS application written in Swift that helps to demonstrate the changes of the values "e" due to "accuracy" and "power" variables.
 ##### I have created this application for the "Numerical Analysis" course in my university.
+##### Here are some previews:
+
+![Alt Text](https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/1.gif)
+![Alt Text](https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/2.gif)
+![Alt Text](https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/3.gif)
+
 ##### The main "feature" of this application is this function:
 ```
 func approximateValue(power: Double, accuracy: Double) -> Double {
