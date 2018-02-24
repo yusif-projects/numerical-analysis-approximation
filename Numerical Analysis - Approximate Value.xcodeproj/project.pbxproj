@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0AC62071B9888F5E8A00AD7C /* Pods_Numerical_Analysis___Approximate_Value.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ED31AD1D2FFCBB205C270D /* Pods_Numerical_Analysis___Approximate_Value.framework */; };
-		D47B817220422A89004E39BD /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D47B816F20422A88004E39BD /* 1.gif */; };
-		D47B817320422A89004E39BD /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D47B817020422A89004E39BD /* 2.gif */; };
-		D47B817420422A89004E39BD /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = D47B817120422A89004E39BD /* 3.gif */; };
 		D4CA0C9B204084D50060B7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */; };
 		D4CA0C9D204084D50060B7B4 /* Main_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA0C9C204084D50060B7B4 /* Main_VC.swift */; };
 		D4CA0CA0204084D50060B7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CA0C9E204084D50060B7B4 /* Main.storyboard */; };
@@ -22,9 +19,6 @@
 /* Begin PBXFileReference section */
 		3EAD5B680A1242B9427FE833 /* Pods-Numerical Analysis - Approximate Value.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Numerical Analysis - Approximate Value.release.xcconfig"; path = "Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value.release.xcconfig"; sourceTree = "<group>"; };
 		482B67640B77453DE64BB5A4 /* Pods-Numerical Analysis - Approximate Value.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Numerical Analysis - Approximate Value.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Numerical Analysis - Approximate Value/Pods-Numerical Analysis - Approximate Value.debug.xcconfig"; sourceTree = "<group>"; };
-		D47B816F20422A88004E39BD /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
-		D47B817020422A89004E39BD /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
-		D47B817120422A89004E39BD /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
 		D4CA0C97204084D50060B7B4 /* Numerical Analysis - Approximate Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Numerical Analysis - Approximate Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CA0C9A204084D50060B7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CA0C9C204084D50060B7B4 /* Main_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_VC.swift; sourceTree = "<group>"; };
@@ -63,16 +57,6 @@
 				3EAD5B680A1242B9427FE833 /* Pods-Numerical Analysis - Approximate Value.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D47B816E20422A6F004E39BD /* Preview Gifs */ = {
-			isa = PBXGroup;
-			children = (
-				D47B816F20422A88004E39BD /* 1.gif */,
-				D47B817020422A89004E39BD /* 2.gif */,
-				D47B817120422A89004E39BD /* 3.gif */,
-			);
-			path = "Preview Gifs";
 			sourceTree = "<group>";
 		};
 		D4CA0C8E204084D50060B7B4 = {
@@ -135,7 +119,6 @@
 		D4CA0CAF204086AC0060B7B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D47B816E20422A6F004E39BD /* Preview Gifs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -202,11 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47B817420422A89004E39BD /* 3.gif in Resources */,
 				D4CA0CA5204084D50060B7B4 /* LaunchScreen.storyboard in Resources */,
-				D47B817320422A89004E39BD /* 2.gif in Resources */,
 				D4CA0CA2204084D50060B7B4 /* Assets.xcassets in Resources */,
-				D47B817220422A89004E39BD /* 1.gif in Resources */,
 				D4CA0CA0204084D50060B7B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
