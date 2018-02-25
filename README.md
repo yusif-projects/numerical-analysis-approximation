@@ -3,7 +3,7 @@
 ###### I have created this application for the "Numerical Analysis" course in my university.
 ### Here are some examples:
 
-<img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/1.gif" width="250" height="250" /><img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/2.gif" width="250" height="250" /><img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/3.gif" width="250" height="250" />
+<img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/1.gif" width="290" height="290" /><img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/2.gif" width="290" height="290" /><img src="https://github.com/yusif-projects/numerical-analysis-approximation/blob/master/Previews%20for%20GitHub/3.gif" width="290" height="290" />
 
 ### Here is the "main feature" of this application:
 ```
